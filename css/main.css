@@ -1,0 +1,11 @@
+body {
+  font-family: Palatino;
+}
+
+.list-item {
+  background: #DDE9FF;
+  width: 50%;
+  height: 50%;
+  padding: 1em;
+
+}
