@@ -1,11 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Rubik:300,400,500');
+
 body {
-  font-family: Palatino;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #001033;
+    margin: 2em;
+}
+
+h1, h2, h3 {
+  font-family: 'Rubik', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+#form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-item:last-of-type {
+  margin-right: 0;
+}
+
+.form-item label {
+  display: block;
+  margin: .5em 0;
+  font-weight: bold;
+}
+
+.form-item input[type="text"], .form-item select {
+  padding: .5em;
+}
+
+#new-item-form input[type="submit"] {
+  cursor: pointer;
+  margin: 1em 0;
+  padding: .5em;
+  font-size: 1em;
+  width: 100px;
+  background: #738CB5;
+  border-style: none;
+  border-radius: 10px;
+  border: 1px solid #DDE9FF;
+}
+
+#new-item-form input[type="submit"]:hover, #new-item-form input[type="submit"]:focus {
+  color: #FFF;
+  background: #344053;
+  border: 1px solid #738CB5;
+  transition: .5s;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .list-item {
   background: #DDE9FF;
-  width: 50%;
-  height: 50%;
   padding: 1em;
-
+  margin: 1em;
+  flex: 40%;
+  border-radius: 10px;
+  border: 1px solid #738CB5;
 }
